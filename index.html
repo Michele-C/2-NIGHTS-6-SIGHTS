@@ -17,9 +17,8 @@
 </head>
 
 <body>
-
     <header>
-        <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <nav class="navbar navbar-dark bg-danger navbar-expand-sm">
 
             <a href="index.html" target="_blank" class="navbar-brand"> <img id="logoimage" src="assets/images/tourist.png"
                     alt="Animated couple of tourists" /> </a>
@@ -71,8 +70,7 @@
             </div>
 
         </nav>
-
-    </header>
+        </header>
 
     <article class="container mt-2">
 
@@ -81,13 +79,13 @@
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>2 NIGHTS | 6 SIGHTS - Mini Breaks in County Clare - The Must See Attractions For The Time Poor
-                        Visitor.</h1>
+                    <h1>2 NIGHTS | 6 SIGHTS - Mini Breaks in County Clare</h1> <h3>The Must See Attractions For The Time Poor
+                        Visitor.</h3>
                     <p class="lead">Decisions! Decisions! Can't decide where to go first? Leave it to the experts. We'll
                         curate a customised <strong><mark>MUST DO</mark></strong> diverse list for your short
                         trip.<br />
                         Sign up today and make the most out of your mini break to the Banner County.</p>
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#signupmod">SignUp Now.</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#signupM">Sign Up!</button>
                 </section>
             </div>
         </div>
@@ -109,7 +107,7 @@
 
             <div class="row">
                 <div id="cliffs" class="col-12 col-md-6 my-auto">
-                        <img class="mr-3"src="assets/images/cliffs.jpg" alt="Cliffs of Moher in Clare" />
+                        <img class="mr-3 rounded-circle" src="assets/images/cliffs.jpg" alt="Cliffs of Moher in Clare" />
                 </div>
                 <div class="middle col-md-6 col-12">
                             <h5>Cliffs of Moher</h5>
@@ -120,11 +118,11 @@
     
             <div class="row">
                 <div id="burren" class="col-12 col-md-6 my-auto">
-                        <img class="mr-3" src="assets/images/burren2.jpg" alt="Burren National Park" />
+                        <img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/burren2.jpg" alt="Burren National Park" />
                     </div>
                         <div class="middle col-md-6 col-12">
                             <h5 class="mt-0 ml-auto">The Burren National Park</h5>
-                            <p><a class="btn btn-danger btn-sm" href="">Read On</a>
+                            <p><a class="btn btn-danger btn-sm" href="">Read More</a>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
                         </p>
                         </div>
@@ -132,7 +130,7 @@
 
             <div class="row">
                 <div id="bunratty" class="col-12 col-md-6 my-auto">
-                        <img class="mr-3" src="assets/images/bunratty.jpg" alt="Bunratty Castle and Folk Park" />
+                        <img class="mr-3 mt-3 img-thumbnail rounded" src="assets/images/bunratty.jpg" alt="Bunratty Castle and Folk Park" />
                 </div>
                  <div class="middle col-12 col-md-6" >
                             <h5 class="mt-0 ml-auto">Bunratty Castle and Folk Park</h5>
@@ -221,32 +219,40 @@
     </footer>
 
 <!-- MODEL BOOTSTRAP-->
-    
-<div class="modal" tabindex="-1" id="signupmod">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Sign Up</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="modal" tabindex="-1" role="dialog" id="signupM">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up to 2 NIGHTS | 6 SIGHTS Mini Breaks </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+
+<div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Firstname">
+                            <label for="lname">Last name:</label>
+                            <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Surname">
+                            </div>
+                            <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="repeatPassword">Repeat Password</label>
+                            <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+                        </div>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                    </form>
+                </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
