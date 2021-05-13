@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div class="container-fluid containernav">
     <header>
         <nav class="navbar navbar-dark bg-danger navbar-expand-sm">
 
@@ -35,7 +36,7 @@
              <!-- Bootstrap dropdown nav items-->
 
                 <ul class="nav nav-tabs">
-                    <li class="active nav-item mr-2"><a class="nav-link" href="index.html">HOME</a></li>
+                   <!-- <li class="active nav-item mr-2"><a class="nav-link" href="index.html">HOME</a></li> -->
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
                             id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">MUST SEE</a>
@@ -64,30 +65,32 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div >
+            <div class="mr-2 phone nav-item"><span class="d-none d-sm-inline"><i class="fas fa-phone-alt"></i>+353 87 4455662</span></div>
             <div class="nav-item mr-2 d-none d-sm-block"><a class="nav-link" href=""><i class="fas fa-suitcase"></i>
                     Suitcase</a></div>
             </div>
 
         </nav>
         </header>
+        </div>
 
-    <article class="container mt-2">
+
 
         <!-- Callout -->
-
+<div class="container-fluid callout-container">
         <div class="row">
-            <div class="col-12">
-                <section class="callout jumbotron text-center">
-                    <h1>2 NIGHTS | 6 SIGHTS - Mini Breaks in County Clare</h1> <h3>The Must See Attractions For The Time Poor
+            <div class="col-12 mt-2 pt-5">
+               <section class="callout jumbotron text-center mt-5">
+                    <h1 class="jumbo-h1">2 NIGHTS | 6 SIGHTS - Mini Breaks in County Clare</h1> <h3>The <strong>Must See</strong> Attractions For The <strong>Time Poor</strong>
                         Visitor.</h3>
-                    <p class="lead">Decisions! Decisions! Can't decide where to go first? Leave it to the experts. We'll
+                    <p class="lead">Decisions! Decisions! Can't decide where to go first? Leave it to the experts.<br/> We'll
                         curate a customised <strong><mark>MUST DO</mark></strong> diverse list for your short
-                        trip.<br />
-                        Sign up today and make the most out of your mini break to the Banner County.</p>
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#signupM">Sign Up!</button>
+                        trip.<br/> <br/>Sign up today and make the most out of your mini break to the Banner County.</p>
+                    <button type="button" class="btn btn-danger btnjumbo" data-toggle="modal" data-target="#signupM">Sign Up!</button>
                 </section>
             </div>
+        </div>
         </div>
         <!-- /.callout -->
 
@@ -95,19 +98,21 @@
         <div class="logostyle my-2" style="text-align: center;"><i class="fas fa-map-marked-alt fa-4x text-danger"></i></div>
 
         <!-- must do -->
-
-        <section class="mustDo">
+<div class="container-wrapper container-wrapper-lightgrey">
+        <div class="container mustdo-container content-container">
+            <section class="mustdo">
             <div class="row">
-                <div id="plana" class="col-12 my-3">
-                    <h2>START PLANNING YOUR ADVENTURE <br />
-                        To learn more click the button.<br />
-                        If you like what you see - add it to your suitcase!</h2>
+                <div class="col-12 page-header">
+                    <h2>Start Planning Your Adventure....<br />
+                        <h2><i class="fa fa-binoculars" aria-hidden="true"></i> Must See!</h2>
+                       <p>To learn more click the <strong>Read On</strong> button.<br />
+                        If you like what you see - add it to your suitcase!</p>
                 </div>
             </div>
 
             <div class="row">
                 <div id="cliffs" class="col-12 col-md-6 my-auto">
-                        <img class="mr-3 rounded-circle" src="assets/images/cliffs.jpg" alt="Cliffs of Moher in Clare" />
+                        <img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/cliffs.jpg" alt="Cliffs of Moher in Clare" />
                 </div>
                 <div class="middle col-md-6 col-12">
                             <h5>Cliffs of Moher</h5>
@@ -130,7 +135,7 @@
 
             <div class="row">
                 <div id="bunratty" class="col-12 col-md-6 my-auto">
-                        <img class="mr-3 mt-3 img-thumbnail rounded" src="assets/images/bunratty.jpg" alt="Bunratty Castle and Folk Park" />
+                        <img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/bunratty.jpg" alt="Bunratty Castle and Folk Park" />
                 </div>
                  <div class="middle col-12 col-md-6" >
                             <h5 class="mt-0 ml-auto">Bunratty Castle and Folk Park</h5>
@@ -139,15 +144,19 @@
                         </div>
                     </div>
         </section>
+        </div>
+        </div>
         <!-- /must do -->
         <hr>
         <!--LOGO-->
         <div class="logostyle"><i class="fab fa-java"></i></div>
 
         <!--must try -->
+        <div class="container-wrapper container-wrapper-blue">
+        <div class="container musttry-container content-container">
         <section class="Musttry">
             <div class="row">
-                <div class="col-12 my-3">
+                <div class="col-12 page-header">
                     <h2>Must Try:</h2>
                     <div class="Musttry">
                         <h3>The Burren Perfumery</h3>
@@ -168,16 +177,18 @@
             </div>
 
         </section>
+        </div>
+        </div>
 
         <!--/must try-->
 
         <!--LOGO-->
         <div class="logostyle"> <i class="fas fa-hotel"></i></div>
         <!--Must Stay-->
-
+<div class="container muststay-container content-container">
         <section class="Muststay">
             <div class="row">
-                <div class="col-12 my-3">
+                <div class="col-12 page-header">
                     <h2>Must Stay:</h2>
                     <div class="Muststay">
                         <h3>Dromoland Castle</h3>
@@ -197,6 +208,7 @@
                 </div>
             </div>
         </section>
+        </div>
         <!--/Must Stay-->
 
         <!--Bucket List Section-->
