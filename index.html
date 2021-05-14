@@ -18,8 +18,7 @@
 
 <body>
     <div class="container-fluid containernav">
-    <header>
-        
+ 
         <nav class="navbar navbar-dark bg-danger navbar-expand-lg">
 
             <a href="index.html" target="_blank" class="navbar-brand"> <img id="logoimage" src="assets/images/tourist.png"
@@ -40,7 +39,6 @@
              <!-- Bootstrap dropdown nav items-->
 
                 <ul class="nav nav-tabs">
-                   <!-- <li class="active nav-item mr-2"><a class="nav-link" href="index.html">HOME</a></li> -->
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
                             id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">MUST SEE</a>
@@ -70,20 +68,19 @@
                     </li>
                 </ul>
             </div >
-            <div class="mr-3 phone d-none d-lg-block nav-item"><i class="fas fa-phone-alt"></i>:  +353 87 4455662</div>
-            <div class="nav-item mr-3 d-none d-lg-block"><a class="nav-link" href=""><i class="fas fa-suitcase"></i>
+            <div class="mr-3 navsuitcase d-none d-lg-block nav-item"><i class="fas fa-phone-alt"></i>:  +353 87 4455662</div>
+            <div class="nav-item navsuitcase d-none d-lg-block"><a class="nav-link" href=""><i class="fas fa-suitcase"></i>
                     Suitcase</a></div>
             </div>
 
         </nav>
-        </header>
+        
         </div>
 
 <!-- Callout -->
 
 <div class="container-fluid callout-container">
-        <div class="row position-absolute">
-            <div class="position-relative">
+        <div class="row">
             <div class="col-12 mt-2 pt-5">
                <section class="callout jumbotron text-center mt-5">
                     <h1 class="jumbo-h1">2 NIGHTS | 6 SIGHTS - Mini Breaks in County Clare</h1> <h3>The <strong>Must See</strong> Attractions For The <strong>Time Poor</strong>
@@ -91,10 +88,9 @@
                     <p class="lead">Decisions! Decisions! Can't decide where to go first? Leave it to the experts.<br/> We'll
                         curate a customised <strong><mark>MUST DO</mark></strong> diverse list for your short
                         trip.<br/> <br/>Sign up today and make the most out of your mini break to the Banner County.</p>
-                    <button type="button" class="btn btn-danger btnjumbo" data-toggle="modal" data-target="#signupM">Sign Up!</button>
+                    <button type="button" class="btn btn-danger btnjumbo" data-toggle="modal" data-target="#signupM">Sign Up Here!</button>
                 </section>
             </div>
-        </div>
         </div>
         </div>
         <!-- /.callout -->
@@ -103,21 +99,26 @@
         <div class="logostyle my-2" style="text-align: center;"><i class="fas fa-map-marked-alt fa-4x text-danger"></i></div>
 
         <!-- must do -->
+
 <div class="container-wrapper container-wrapper-lightgrey">
         <div class="container mustdo-container content-container">
+            
             <section class="mustdo">
-            <div class="row">
-                <div class="col-12 page-header">
-                    <h2>Start Planning Your Adventure....<br />
-                        <h2><i class="fa fa-binoculars" aria-hidden="true"></i> Must See!</h2>
+                    <div class="row">
+               
+                    <div class="col-12 page-header">
+                    <h2>Start Planning Your Adventure....<br /></h2>
+                        
                        <p>To learn more click the <strong>Read On</strong> button.<br />
-                        If you like what you see - add it to your suitcase!</p>
+                        To see more click on the <strong>Picture</strong>. Why not add it to your suitcase?</p>
                 </div>
+                <div class="col-12 page-header">
+                    <h2><i class="fa fa-binoculars" aria-hidden="true"></i> Must See!</h2></div>
             </div>
 
             <div class="row">
                 <div id="cliffs" class="col-12 col-md-6 my-auto">
-                        <img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/cliffs.jpg" alt="Cliffs of Moher in Clare" />
+                       <a href="https://www.cliffsofmoher.ie/"><img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/cliffs.jpg" alt="Cliffs of Moher in Clare" /></a>
                 </div>
                 <div class="middle col-md-6 col-12">
                             <h5>Cliffs of Moher</h5>
@@ -128,7 +129,7 @@
     
             <div class="row">
                 <div id="burren" class="col-12 col-md-6 my-auto">
-                        <img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/burren2.jpg" alt="Burren National Park" />
+                       <a href="https://www.burrennationalpark.ie/"> <img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/burren2.jpg" alt="Burren National Park" /></a>
                     </div>
                         <div class="middle col-md-6 col-12">
                             <h5 class="mt-0 ml-auto">The Burren National Park</h5>
@@ -140,8 +141,8 @@
 
             <div class="row">
                 <div id="bunratty" class="col-12 col-md-6 my-auto">
-                        <img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/bunratty.jpg" alt="Bunratty Castle and Folk Park" />
-                </div>
+                        <a href="https://www.bunrattycastle.ie/" ><img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/bunratty.jpg" alt="Bunratty Castle and Folk Park" /></a>
+                    </div>
                  <div class="middle col-12 col-md-6" >
                             <h5 class="mt-0 ml-auto">Bunratty Castle and Folk Park</h5>
                             <p><a class="btn btn-danger btn-sm" href="">Read On</a>
@@ -152,35 +153,68 @@
         </div>
         </div>
         <!-- /must do -->
-        <hr>
-        <!--LOGO-->
-        <div class="logostyle"><i class="fab fa-java"></i></div>
 
-        <!--must try -->
+        <!--LOGO-->
+        <div class=" my-2" style="text-align: center;"><i class="fab fa-java  fa-5x text-danger"></i></div>
+
+        <!------------------------------------------------must try ------------------------------------------------>
+
         <div class="container-wrapper container-wrapper-blue">
-        <div class="container musttry-container content-container">
-        <section class="Musttry">
+
+            <div class="container musttry-container content-container">
+        
+            <section class="Musttry">
+            
             <div class="row">
+
                 <div class="col-12 page-header">
-                    <h2>Must Try:</h2>
-                    <div class="Musttry">
-                        <h3>The Burren Perfumery</h3>
-                        <p>Picture of the perfumery button read more buttom add to list.</p>
-                        <p><a class="btn btn-danger btn-sm" href="">Read On</a></p>
-                    </div>
-                    <div class="Musttry">
-                        <h3>Burren Smoke House</h3>
-                        <p>picture and 2 buttons</p>
-                        <p><a class="btn btn-danger btn-sm" href="">Read On</a></p>
-                    </div>
-                    <div class="Musttry">
-                        <h3>Hazel Mountain Chocolate</h3>
-                        <p>picture and 2 buttons</p>
-                        <p><a class="btn btn-danger btn-sm" href="">Read On</a></p>
-                    </div>
+                    
+                    <h2><i class="fas fa-cookie-bite"></i> Must Try!</h2>
                 </div>
             </div>
 
+                    <div id="Musttry1"></div> <!--can remove later??-->
+                    
+                <div class="row">
+                    <div id="perfumery" class="col-12 col-md-6 my-auto">
+                       <a href="https://burrenperfumery.com/"><img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/perfumery.jpg" alt="The Burren Perfumery" /></a>
+                    </div>
+                
+
+                <div class="middle col-md-6 col-12">
+                            <h5>The Burren Perfumery</h5>
+                            <p><a class="btn btn-danger btn-sm" href="">Read On</a>
+                            <a class="btn btn-dark btn-sm" href="index.html">Home</a></p>
+                </div>
+                </div>
+                    
+                     
+                <div id="Musttry2">  <!--can remove later??-->
+
+                <div class="row">
+                    <div id="smokehouse" class="col-12 col-md-6 my-auto">
+                       <a href="https://www.burrensmokehouse.com/"><img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/burrensmoke.jpg" alt="Burren Smoke House" /></a>
+                </div>
+
+                <div class="middle col-md-6 col-12">
+                            <h5>The Burren Smoke House</h5>
+                            <p><a class="btn btn-danger btn-sm" href="">Read On</a>
+                            <a class="btn btn-dark btn-sm" href="index.html">Home</a></p>
+                        </div>
+                    </div> 
+                    
+                    <div class="row">
+                    <div id="hazelcoco" class="col-12 col-md-6 my-auto">
+                       <a href="https://www.hazelmountainchocolate.com/"><img class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/hazelcoco.jpg" alt="Hazel Mountain Chocolate" /></a>
+                </div>
+
+                <div class="middle col-md-6 col-12">
+                            <h5>Hazel Mountain Chocolate</h5>
+                            <p><a class="btn btn-danger btn-sm" href="">Read On</a>
+                            <a class="btn btn-dark btn-sm" href="index.html">Home</a></p>
+                        </div>
+                    </div>    
+                        
         </section>
         </div>
         </div>
@@ -189,12 +223,19 @@
 
         <!--LOGO-->
         <div class="logostyle"> <i class="fas fa-hotel"></i></div>
-        <!--Must Stay-->
-<div class="container muststay-container content-container">
+        
+        <!---------------------------------------------------------------------Must Stay-------------------------------------->
+
+        <div class="container-wrapper container-wrapper-amber">
+        <div class="container muststay-container content-container">
         <section class="Muststay">
+             
             <div class="row">
-                <div class="col-12 page-header">
-                    <h2>Must Stay:</h2>
+                    <div class="col-12 page-header">
+                        <h2><i class="fas fa-spa"></i> Must Stay!</h2>
+                    </div>
+             </div>
+
                     <div class="Muststay">
                         <h3>Dromoland Castle</h3>
                         <p>Picture of the DC read more buttom add to list.</p>
@@ -210,9 +251,9 @@
                         <p>picture and 2 buttons</p>
                         <p><a class="btn btn-danger btn-sm" href="">Read On</a></p>
                     </div>
-                </div>
-            </div>
+
         </section>
+        </div>
         </div>
         <!--/Must Stay-->
 
