@@ -310,8 +310,22 @@
     </article>
 
     <footer>
-        <p>current weather in clare api</p>
-        social media
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-12 footersetting">
+            <h5>Contact Us</h5>
+            <p><i class="fas fa-mobile-alt"></i> Tele: +353 86 4455662</p>
+            <p><i class="far fa-envelope"></i> Email: info@2nights6sights.ie</p>
+
+            <ul class="be-social">
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"> </i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"> </i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"> </i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"> </i></a></li>
+            </ul>
+        </div>
+        </div>
+        </div>
     </footer>
 
 <!-- MODEL BOOTSTRAP-->
@@ -319,7 +333,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Sign Up to 2 NIGHTS | 6 SIGHTS Mini Breaks </h5>
+                    <h6 class="modal-title"><img id="logoimagem" src="assets/images/tourist.png"
+                    alt="Animated couple of tourists" />2 NIGHTS | 6 SIGHTS MINI BREAKS</h6>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -329,21 +344,21 @@
                     <form>
                         <div class="form-group">
                             <label for="fname">First name:</label><br>
-                            <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Firstname">
+                            <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Firstname" required>
                             <label for="lname">Last name:</label>
-                            <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Surname">
+                            <input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Surname" required>
                             </div>
                             <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
                             </div>
                             <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
                         </div>
                         <div class="form-group">
                             <label for="repeatPassword">Repeat Password</label>
-                            <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+                            <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password" required>
                         </div>
                         <button type="submit" class="btn btn-danger">Submit</button>
                     </form>
