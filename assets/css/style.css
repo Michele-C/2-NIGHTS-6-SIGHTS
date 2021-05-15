@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
 
-* {
-    margin :0;
+/* Clear all default padding and margins before starting - although wild cards slow site */ 
+*{
+    margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body{
@@ -95,6 +97,13 @@ img {
     margin-right: 50px;
     margin-left: 50px;
 }
+#logoimagem {
+    width:50px;
+    height:50px;
+    border: 0;
+    margin-right: 30px;
+    margin-left: 30px;
+}
 
 
 .img-thumbnail {
@@ -129,7 +138,7 @@ img {
     padding-top: 100px;
 }
 
-/* Nav Bar Styling */
+/*-------------------------------------------------------------- Nav Bar Styling */
 
 .navbar{
     margin-bottom: 0;
@@ -184,4 +193,35 @@ a:hover {
 
 #plana {
     text-align: center;
+}
+/*----------------------------------------------------------------FOOTER SECTION!*/
+
+footer {
+    min-height: 70px;
+    background: #dc3545;
+    text-align: center;
+}
+
+.footersetting {
+    color:white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.footersetting p{
+    margin-bottom: 2px;
+}
+.footersetting h5{
+    margin-bottom: 4px;
+}
+
+.be-social li {
+    display: inline;
+    color: white;
+    float: both;
+    margin-top: 2px;
+    padding: 5px;
+}
+.be-social i {
+    color: white;
 }
