@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
 
 /* Clear all default padding and margins before starting - although wild cards slow site */ 
+
 *{
     margin: 0;
     padding: 0;
@@ -71,7 +72,7 @@ background: url(../images/background.jpg) no-repeat bottom right fixed;
 /*took the flashing code from edit fiddle website and amended it for my needs */
 
 .flash {
-  animation: blinker 2s linear infinite;
+  animation: blinker 3s linear infinite;
 }
 
 @keyframes blinker {  
@@ -144,7 +145,7 @@ img {
     margin-bottom: 0;
     border: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0,0.25;)
+    background-color: rgba(0,0,0,0,0.25);
 }
 
 .containernav{
@@ -168,6 +169,31 @@ img {
 
 /* BUTTON STYLING */
 
+.buttonreadon {
+    width: 75px;
+    color: black;
+    background-color: #dc3545;
+    padding: .33rem .5rem;
+    font-size: .9rem;
+    line-height: 1.5;
+    border-radius: .5rem;
+}
+
+
+.buttonsuit{
+    width: 75px;
+    color: black;
+    background-color: #f8ab06;
+    padding: .33rem .5rem;
+    font-size: .9rem;
+    line-height: 1.5;
+    border-radius: .5rem;
+}
+
+
+ #cliffsbtn{
+     color: white;
+ }
 .btnjumbo {
     font-weight: bold;
     font-size: larger;
