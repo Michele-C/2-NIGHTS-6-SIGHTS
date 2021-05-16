@@ -1,6 +1,3 @@
-
-alert("hello from inside new jsfile");
-
 function addItemCliffs(){
 
     var x = document.createElement("li");
@@ -9,9 +6,9 @@ function addItemCliffs(){
      
     x.innerHTML = button.value;
 
-    button.value = "";
+     x.onclick = removeItem;
 
-    document.getElementById("michele").appendChild(x);
+    document.getElementById("emptycase").appendChild(x);
 }
 
 
@@ -23,9 +20,9 @@ function addItemBurren(){
      
     x.innerHTML = button.value;
 
-    button.value = "";
+     x.onclick = removeItem;
 
-    document.getElementById("michele").appendChild(x);
+    document.getElementById("emptycase").appendChild(x);
 }
 
 function addItemBunratty(){
@@ -36,9 +33,9 @@ function addItemBunratty(){
      
     x.innerHTML = button.value;
 
-    button.value = "";
+     x.onclick = removeItem;
 
-    document.getElementById("michele").appendChild(x);
+    document.getElementById("emptycase").appendChild(x);
 }
 
 function addItemPerfumery(){
@@ -49,9 +46,11 @@ function addItemPerfumery(){
      
     x.innerHTML = button.value;
 
-    button.value = "";
+     x.onclick = removeItem;
 
-    document.getElementById("michele").appendChild(x);
+  
+
+    document.getElementById("emptycase").appendChild(x);
 }
 
 
@@ -62,10 +61,11 @@ function addItemSmoke(){
     var button = document.getElementById("selectSmoke");
      
     x.innerHTML = button.value;
+     x.onclick = removeItem;
 
-    button.value = "";
+  
 
-    document.getElementById("michele").appendChild(x);
+    document.getElementById("emptycase").appendChild(x);
 }
 
 
@@ -77,9 +77,10 @@ function addItemHazel(){
      
     x.innerHTML = button.value;
 
-    button.value = "";
+     x.onclick = removeItem;
 
-    document.getElementById("michele").appendChild(x);
+    document.getElementById("emptycase").appendChild(x);
+      
 }
 
 function addItemDromoland(){
@@ -90,9 +91,11 @@ function addItemDromoland(){
      
     x.innerHTML = button.value;
 
-    button.value = "";
+     x.onclick = removeItem;
 
-    document.getElementById("michele").appendChild(x);
+    //button.value = "";
+
+    document.getElementById("emptycase").appendChild(x);
 }
 
 function addItemOldground(){
@@ -103,9 +106,9 @@ function addItemOldground(){
      
     x.innerHTML = button.value;
 
-    button.value = "";
+     x.onclick = removeItem;
 
-    document.getElementById("michele").appendChild(x);
+    document.getElementById("emptycase").appendChild(x);
 }
 
 
@@ -117,8 +120,13 @@ function addItemDooling(){
      
     x.innerHTML = button.value;
 
-    button.value = "";
+    x.onclick = removeItem;
 
-    document.getElementById("michele").appendChild(x);
+    document.getElementById("emptycase").appendChild(x);
 }
 
+//removing item from suitcase.
+
+function removeItem() {
+    document.getElementById("emptycase").removeChild(this);
+    }
