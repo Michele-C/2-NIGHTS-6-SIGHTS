@@ -79,20 +79,19 @@
 
     </div>
 
-    <!-- Callout -->
+    <!-- MainPage -->
 
-    <div class="container-fluid callout-container">
+    <div class="container-fluid mainpage-container">
         <div class="row">
             <div class="col-12 mt-2 pt-5">
                 <section class="callout jumbotron text-center mt-5">
                     <h1 class="jumbo-h1">2 NIGHTS | 6 SIGHTS - Mini Breaks in County Clare</h1>
                     <h3>The <strong>Must See</strong> Attractions For The <strong>Time Poor</strong>
                         Visitor.</h3>
-                    <p class="lead">Decisions! Decisions! Can't decide where to go first? Leave it to the experts.<br />
+                    <p class="lead">Decisions! Decisions! Can't decide where to go first? Leave it to the experts.
                         We'll
-                        curate a customised <strong><mark class="flash">MUST DO</mark></strong> diverse list for your
-                        short
-                        trip.<br /> <br />Sign up today and make the most out of your mini break to the Banner County.
+                        curate a customised <strong><mark class="flash">MUST DO</mark></strong> list for your
+                        short trip.<br />Sign up today and make the most out of your mini break to the Banner County.
                     </p>
                     <button type="button" class="btn btn-danger btnjumbo" data-toggle="modal"
                         data-target="#signupM">Sign Up Here!</button>
@@ -100,7 +99,7 @@
             </div>
         </div>
     </div>
-    <!-- /.callout -->
+    <!-- End of Main page -->
 
     <!--LOGO-->
     <div class="logostyle my-2" style="text-align: center;"><i class="fas fa-map-marked-alt fa-4x text-danger"></i>
@@ -115,7 +114,7 @@
 
                     <p>To learn more click the <strong>Read On</strong> buttons below.<br />
                         To see more click on the <strong>Picture</strong>.<br /><br/>
-                        <span id="spanbg" class="flash">Add it to your suitcase by clicking the the "SUITCASE"
+                        <span id="spanbg" class="flash">Add it to your list by clicking on the "SUITCASE"
                             button!</span></p>
                 </div>
             </div>
@@ -362,6 +361,21 @@
             </section>
         </div>
     </div>
+
+     <!-- Google Maps API section -->
+
+        <section id= "api-map">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h4 id="maptitle">Map of County Clare</h4>
+                </div>
+                <div id="map"></div>
+
+
+            </div>
+         </div>
+        </section>
     
 
     <!-- Suitcase Section -->
@@ -376,15 +390,17 @@
             </div>
         </div>
 
+       
+
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 footersetting">
                     <h5>Contact Us</h5>
                     <p><i class="fas fa-mobile-alt"></i> Tele: +353 86 4455662</p>
-                    <p><i class="far fa-envelope"></i> Email: info@2nights6sights.ie</p>
+                    <p id="femail"><i class="far fa-envelope"></i> Email: info@2nights6sights.ie</p>
 
-                    <ul class="be-social">
+                    <ul class="besocial">
                         <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"> </i></a></li>
                         <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"> </i></a>
                         </li>
@@ -397,7 +413,7 @@
             </div>
         </div>
     </footer>
-
+   
    
     <!-- MODEL BOOTSTRAP-->
     <div class="modal" tabindex="-1" role="dialog" id="signupM">
@@ -441,6 +457,60 @@
 </div>
 </div>
 
+<script>
+    function initMap() {
+    var claremap = new google.maps.Map(document.getElementById("map"),{
+        zoom: 7,
+        center: {
+            lat:  52.847054,
+            lng: -8.988436
+        }
+    });
+
+    var labels = "ABCDEFGHIJKLM";
+
+    var locations = [{
+        lat: 52.93499626, 
+        lng: -9.46916479
+    }, {
+        lat: 53.0499998, 
+        lng: -9.0999996
+    }, { 
+        lat: 52.6999972, 
+        lng:-8.8166634
+    }, {
+        lat: 53.043896410898, 
+        lng: -9.0464687347412
+    }, {
+        lat: 52.93845840, 
+        lng: -9.29322700
+    }, {
+        lat: 53.130965219963734, 
+        lng:-9.047364555628008
+    },{
+        lat: 52.786830186, 
+        lng: -8.903163054
+    }, {
+        lat: 52.847054, 
+        lng: -8.988436
+    }, {lat: 53.016029, 
+        lng: -9.377420
+    }];
+
+var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+// Marker Clusterer 
+            var markerCluster = new MarkerClusterer(claremap, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+
+</script>
+
 
                 <!-- Bootstrap JS, jQuery, Popper bundle -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
@@ -450,6 +520,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
+
+         <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0vABw-7zdH3dpXNkfNRAYuiz0_pXlxXs&callback=initMap"></script>
     <script src="assets/javascript/script.js"></script>
     <script src="assets/javascript/readon.js"></script>
 
