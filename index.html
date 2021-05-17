@@ -141,13 +141,13 @@
                                 src="assets/images/cliffs.jpg" alt="Cliffs of Moher in Clare" /></a>
                     </div>
                     <div class="middle col-md-6 col-12">
-                        <h5>Cliffs of Moher</h5>
+                        <h4>Cliffs of Moher</h4>
                         <p>
-                            <button data-type="cliffsbtn" class="buttonreadon">Read On</button>
+                            <button id="readcliffs" data-type="cliffsbtn" class="buttonreadon">Read On</button>
                             <button data-type="Cliffs of Moher" id="selectCliffs" class="buttonsuit"
                                 value="Cliffs of Moher" onclick="addItemCliffs();">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
-                        </p>
+                            <p id="readcliffsp"></p>
                     </div>
                 </div>
 
@@ -158,12 +158,13 @@
                                 alt="Burren National Park" /></a>
                     </div>
                     <div class="middle col-md-6 col-12">
-                        <h5 class="mt-0 ml-auto">The Burren National Park</h5>
+                        <h4>The Burren National Park</h4>
                         <p>
-                            <button data-type="burrenbtn" class="buttonreadon">Read On</a></button>
+                            <button id="readBurren" data-type="burrenbtn" class="buttonreadon">Read On</a></button>
                             <button id="selectBurren" class="buttonsuit" value="The Burren National Park"
                                 onclick="addItemBurren(this);">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
+                            <p id="readBurrenp"></p>
                         </p>
                     </div>
                 </div>
@@ -174,12 +175,13 @@
                                 src="assets/images/bunratty.jpg" alt="Bunratty Castle and Folk Park" /></a>
                     </div>
                     <div class="middle col-12 col-md-6">
-                        <h5 class="mt-0 ml-auto">Bunratty Castle and Folk Park</h5>
+                        <h4>Bunratty Castle and Folk Park</h4>
                         <p>
-                            <button data-type="bunrattybtn" class="buttonreadon">Read On</a></button>
+                            <button id="readBunratty" data-type="bunrattybtn" class="buttonreadon">Read On</a></button>
                             <button id="selectBunratty" class="buttonsuit" value="Bunratty Castle and Folk Park"
                                 onclick="addItemBunratty()">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
+                            <p id="readBunrattyp"></p>
                         </p>
                     </div>
                 </div>
@@ -218,12 +220,13 @@
 
 
                     <div class="middle col-md-6 col-12">
-                        <h5>The Burren Perfumery</h5>
+                        <h4>The Burren Perfumery</h4>
                         <p>
-                            <button data-type="perfumerybtn" class="buttonreadon">Read On</a></button>
+                            <button id="readPerfumery" data-type="perfumerybtn" class="buttonreadon">Read On</a></button>
                             <button id="selectPerfumery" class="buttonsuit" value="The Burren Perfumery"
                                 onclick="addItemPerfumery()">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
+                            <p id="readPerfumeryp"></p>
                         </p>
                     </div>
                 </div>
@@ -240,12 +243,13 @@
                         </div>
 
                         <div class="middle col-md-6 col-12">
-                            <h5>The Burren Smoke House</h5>
+                            <h4>The Burren Smoke House</h4>
                             <p>
-                                <button data-type="smokebtn" class="buttonreadon">Read On</button>
+                                <button id="readSmoke" data-type="smokebtn" class="buttonreadon">Read On</button>
                                 <button id="selectSmoke" class="buttonsuit" value="The Burren Smoke House"
                                     onclick="addItemSmoke()">Suitcase</button>
                                 <a class="btn btn-dark btn-sm" href="index.html">Home</a> </p>
+                                <p id="readSmokep"></p>
                         </div>
                     </div>
 
@@ -257,11 +261,13 @@
                         </div>
 
                         <div class="middle col-md-6 col-12">
-                            <h5>Hazel Mountain Chocolate</h5>
-                            <p><button data-type="hazelbtn" class="buttonreadon">Read On</button>
+                            <h4>Hazel Mountain Chocolate</h4>
+                            <p>
+                                <button id="readHazel" data-type="hazelbtn" class="buttonreadon">Read On</button>
                                 <button id="selectHazel" class="buttonsuit" value="Hazel Mountain Chocolate"
                                     onclick="addItemHazel()">Suitcase</button>
                                 <a class="btn btn-dark btn-sm" href="index.html">Home</a>
+                                <p id="readHazelp"></p>
                             </p>
                         </div>
                     </div>
@@ -294,15 +300,17 @@
                     <div id="dromoland" class="col-12 col-md-6 my-auto">
                         <a href="https://www.dromoland.ie/"><img class="mr-3 mt-3 img-thumbnail rounded-circle"
                                 src="assets/images/dromland.jpg" alt="Dromoland Castle" /></a>
+                                
                     </div>
 
 
                     <div class="middle col-md-6 col-12">
-                        <h5>Dromoland Castle</h5>
-                        <p><button data-type="dromolandbtn" class="buttonreadon">Read On</button>
+                        <h4>Dromoland Castle</h4>
+                        <p><button id="readDromo" data-type="dromolandbtn" class="buttonreadon">Read On</button>
                             <button id="selectDromoland" class="buttonsuit" value="Dromoland Castle"
                                 onclick="addItemDromoland()">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a> </p>
+                            <p id="readDromop"></p>
                     </div>
                 </div>
 
@@ -315,11 +323,12 @@
 
 
                     <div class="middle col-md-6 col-12">
-                        <h5>The Old Ground Hotel</h5>
-                        <p><button data-type="oldgroundbtn" class="buttonreadon">Read On</button>
+                        <h4>The Old Ground Hotel</h4>
+                        <p><button id="readOldg" data-type="oldgroundbtn" class="buttonreadon">Read On</button>
                             <button id="selectOldground" class="buttonsuit" value="The Old Ground Hotel"
                                 onclick="addItemOldground()">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a></p>
+                            <p id="readOldgp"></p>
                     </div>
                 </div>
 
@@ -331,11 +340,13 @@
 
 
                     <div class="middle col-md-6 col-12">
-                        <h5>Doolin Glamping</h5>
-                        <p><button data-type="doolingbtn" class="buttonreadon">Read On</button>
+                        <h4>Doolin Glamping</h4>
+                        <p>
+                            <button id="readGlamp" data-type="doolingbtn" class="buttonreadon">Read On</button>
                             <button id="selectDooling" class="buttonsuit" value="Doolin Glamping"
                                 onclick="addItemDooling()">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
+                            <p id="readGlampp"></p>
                         </p>
                     </div>
                 </div>
@@ -423,9 +434,7 @@
 
 
                 <!-- Bootstrap JS, jQuery, Popper bundle -->
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
@@ -433,7 +442,7 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
-
+    <script src="assets/readon.js"></script>
 
 </body>
 
