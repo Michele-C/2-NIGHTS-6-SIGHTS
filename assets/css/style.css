@@ -258,10 +258,14 @@ footer {
 #map {
     width: 100%;
     min-height: 360px;
+    
 }
-
+div#map{
+    padding: 0;
+}
 h4#maptitle {
     text-align: center;
-    padding: 50px;
-
+    padding: 13px 0;
+    margin: 0;
+    width:100%;
 }
