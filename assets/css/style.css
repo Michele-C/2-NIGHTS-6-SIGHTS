@@ -31,7 +31,7 @@ body {
 /* I took guidence and some names from the Whiskey Drop tutorial */
 
 .mainpage-container {
-	height: 120vh;
+	height: 100vh;
 	background: url(../images/background.jpg) no-repeat bottom right fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -269,3 +269,4 @@ h4#maptitle {
     margin: 0;
     width:100%;
 }
+
