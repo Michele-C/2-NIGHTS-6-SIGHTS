@@ -9,10 +9,10 @@ $("#readcliffs").click(function(){
     });
 
     $("#readBurren").click(function(){
-        $("#readBurrenp").text("The Burren National Park contains examples of all the major habitats within the Burren: Limestone Pavement, Calcareous Grassland, Hazel scrub, Ash/Hazel Woodland, Turloughs, Lakes, Petrifying Springs, Cliffs and Fen. The highest point is Knockanes which continues to Mullaghmór to the south. East is a low lying limestone pavement containing a number of semi-permanent lakes. Breath-taking location! Located at Pointer B on Google maps below.")
+        $("#readBurrenp").text("The Burren National Park contains examples of all the major habitats within the Burren: Limestone Pavement, Calcareous Grassland, Hazel scrub, Ash/Hazel Woodland, Turloughs, Lakes, Petrifying Springs, Cliffs and Fen. The region is a low lying limestone pavement containing a number of semi-permanent lakes. Breath-taking location! Located at Pointer B on Google maps below.")
     });
     $("#readBunratty").click(function(){
-        $("#readBunrattyp").text("Bunratty Castle is the most complete and authentic castle in Ireland. The site on which Bunratty Castle stands was in origin a Viking trading camp in 970. The present structure is the last of four castles to be built on the site. Take a tour of this iconic fortress; hear and see how the lords and ladies of this castle lived; hear stories of battles and bravery and enjoy stunning views across the idyllic Clare countryside. Located at Pointer C on Google maps below.")
+        $("#readBunrattyp").text("Bunratty Castle is the most complete and authentic castle in Ireland. The Bunratty site was in origin a Viking trading camp in 970. Take a tour of this iconic fortress; hear and see how the lords and ladies of this castle lived. Enjoy stunning views across the idyllic Clare countryside. Located at Pointer C on Google maps below.")
 
     });
 
