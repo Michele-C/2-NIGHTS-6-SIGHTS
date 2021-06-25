@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Co Clare - Must See Must Do List </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="assets/css/style.css" />
-
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
 
 </head>
 
@@ -70,39 +68,39 @@
                     </li>
                 </ul>
             </div>
-            <div class="mr-3 navsuitcase d-none d-lg-block nav-item"><i class="fas fa-mobile-alt"></i>: +353 87 4455662
+            <div class="mr-3 navsuitcase d-none d-lg-block nav-item"><i class="fas fa-phone-alt"></i>: +353 87 4455662
             </div>
             <div class="nav-item navsuitcase d-none d-lg-block"><a class="nav-link" href="#suitcase"><i
                         class="fas fa-suitcase"></i>
                     Suitcase</a></div>
+    </div>
 
-        </nav>
+    </nav>
 
     </div>
 
-    <!-- MainPage -->
+    <!-- Callout -->
 
-    <div class="container-fluid mainpage-container">
-        <div id="decisions" class="row">
+    <div class="container-fluid callout-container">
+        <div class="row">
             <div class="col-12 mt-2 pt-5">
                 <section class="callout jumbotron text-center mt-5">
                     <h1 class="jumbo-h1">2 NIGHTS | 6 SIGHTS - Mini Breaks in County Clare</h1>
                     <h3>The <strong>Must See</strong> Attractions For The <strong>Time Poor</strong>
                         Visitor.</h3>
-                        <div class="d-none d-sm-block">
-                    <p class="lead">Decisions! Decisions! Can't decide where to go first? Leave it to the experts.
+                    <p class="lead">Decisions! Decisions! Can't decide where to go first? Leave it to the experts.<br />
                         We'll
-                        curate a customised <strong><mark class="flash">MUST DO</mark></strong> list for your
-                        short trip.<br />Sign up today and make the most out of your mini break to the Banner County.
+                        curate a customised <strong><mark class="flash">MUST DO</mark></strong> diverse list for your
+                        short
+                        trip.<br /> <br />Sign up today and make the most out of your mini break to the Banner County.
                     </p>
-                    </div>
                     <button type="button" class="btn btn-danger btnjumbo" data-toggle="modal"
                         data-target="#signupM">Sign Up Here!</button>
                 </section>
             </div>
         </div>
     </div>
-    <!-- End of Main page -->
+    <!-- /.callout -->
 
     <!--LOGO-->
     <div class="logostyle my-2" style="text-align: center;"><i class="fas fa-map-marked-alt fa-4x text-danger"></i>
@@ -116,8 +114,8 @@
                     <h2>Start Planning Your Adventure....<br /></h2>
 
                     <p>To learn more click the <strong>Read On</strong> buttons below.<br />
-                        To see more click on the <strong>Picture</strong>.<br /><br />
-                        <span id="spanbg" class="flash">Add it to your list by clicking on the "SUITCASE"
+                        To see more click on the <strong>Picture</strong>.<br /><br/>
+                        <span id="spanbg" class="flash">Add it to your suitcase by clicking the the "SUITCASE"
                             button!</span></p>
                 </div>
             </div>
@@ -134,7 +132,7 @@
                         <h2><i class="fa fa-binoculars" aria-hidden="true"></i> Must See!</h2>
                     </div>
                 </div>
-<button id="my-button"> CLICKITY CLICK</button>
+
                 <div id="cliffs" class="row">
                     <div class="col-12 col-md-6 my-auto">
                         <a href="https://www.cliffsofmoher.ie/"><img class="mr-3 mt-3 img-thumbnail rounded-circle"
@@ -144,10 +142,10 @@
                         <h4>Cliffs of Moher</h4>
                         <p>
                             <button id="readcliffs" data-type="cliffsbtn" class="buttonreadon">Read On</button>
-                            <button id="selectCliffs" class="buttonsuit">Suitcase</button>
+                            <button data-type="Cliffs of Moher" id="selectCliffs" class="buttonsuit"
+                                value="Cliffs of Moher" onclick="addItemCliffs();">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
-                        </p>
-                        <p id="readcliffsp"></p>
+                            <p id="readcliffsp"></p>
                     </div>
                 </div>
 
@@ -160,12 +158,12 @@
                     <div class="middle col-md-6 col-12">
                         <h4>The Burren National Park</h4>
                         <p>
-                            <button id="readBurren" data-type="burrenbtn" class="buttonreadon">Read On</button>
-                            <button id="selectBurren" class="buttonsuit" value="The Burren National Park">Suitcase</button>
+                            <button id="readBurren" data-type="burrenbtn" class="buttonreadon">Read On</a></button>
+                            <button id="selectBurren" class="buttonsuit" value="The Burren National Park"
+                                onclick="addItemBurren(this);">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
+                            <p id="readBurrenp"></p>
                         </p>
-                        <p id="readBurrenp"></p>
-
                     </div>
                 </div>
 
@@ -177,24 +175,23 @@
                     <div class="middle col-12 col-md-6">
                         <h4>Bunratty Castle and Folk Park</h4>
                         <p>
-                            <button id="readBunratty" data-type="bunrattybtn" class="buttonreadon">Read On</button>
-                            <button id="selectBunratty" class="buttonsuit" value="Bunratty Castle and Folk Park">Suitcase</button>
+                            <button id="readBunratty" data-type="bunrattybtn" class="buttonreadon">Read On</a></button>
+                            <button id="selectBunratty" class="buttonsuit" value="Bunratty Castle and Folk Park"
+                                onclick="addItemBunratty()">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
+                            <p id="readBunrattyp"></p>
                         </p>
-                        <p id="readBunrattyp"></p>
-
                     </div>
                 </div>
             </section>
         </div>
     </div>
-
+    <!-- /must do -->
 
     <!--LOGO-->
-
     <div class=" my-2" style="text-align: center;"><i class="fab fa-java  fa-5x text-danger"></i></div>
 
-    <!-- Beginning of the MUST TRY Section -->
+    <!------------------------------------------------must try ------------------------------------------------>
 
     <div class="container-wrapper container-wrapper-blue">
 
@@ -210,6 +207,8 @@
                     </div>
                 </div>
 
+                <div id="Musttry1"></div>
+                <!--can remove later??-->
 
                 <div id="perfumery" class="row">
                     <div class="col-12 col-md-6 my-auto">
@@ -221,65 +220,66 @@
                     <div class="middle col-md-6 col-12">
                         <h4>The Burren Perfumery</h4>
                         <p>
-                            <button id="readPerfumery" data-type="perfumerybtn" class="buttonreadon">Read On</button>
-                            <button id="selectPerfumery" class="buttonsuit">Suitcase</button>
+                            <button id="readPerfumery" data-type="perfumerybtn" class="buttonreadon">Read On</a></button>
+                            <button id="selectPerfumery" class="buttonsuit" value="The Burren Perfumery"
+                                onclick="addItemPerfumery()">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
+                            <p id="readPerfumeryp"></p>
                         </p>
-                        <p id="readPerfumeryp"></p>
-
                     </div>
                 </div>
 
-                <!-- SMOKE HOUSE -->
 
+                <div id="Musttry2">
+                    <!--can remove later??-->
 
-                <div id="smokehouse" class="row">
-                    <div class="col-12 col-md-6 my-auto">
-                        <a href="https://www.burrensmokehouse.com/"><img class="mr-3 mt-3 img-thumbnail rounded-circle"
-                                src="assets/images/burrensmoke.jpg" alt="Burren Smoke House" /></a>
+                    <div id="smokehouse" class="row">
+                        <div class="col-12 col-md-6 my-auto">
+                            <a href="https://www.burrensmokehouse.com/"><img
+                                    class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/burrensmoke.jpg"
+                                    alt="Burren Smoke House" /></a>
+                        </div>
+
+                        <div class="middle col-md-6 col-12">
+                            <h4>The Burren Smoke House</h4>
+                            <p>
+                                <button id="readSmoke" data-type="smokebtn" class="buttonreadon">Read On</button>
+                                <button id="selectSmoke" class="buttonsuit" value="The Burren Smoke House"
+                                    onclick="addItemSmoke()">Suitcase</button>
+                                <a class="btn btn-dark btn-sm" href="index.html">Home</a> </p>
+                                <p id="readSmokep"></p>
+                        </div>
                     </div>
 
-                    <div class="middle col-md-6 col-12">
-                        <h4>The Burren Smoke House</h4>
-                        <p>
-                            <button id="readSmoke" data-type="smokebtn" class="buttonreadon">Read On</button>
-                            <button id="selectSmoke" class="buttonsuit">Suitcase</button>
-                            <a class="btn btn-dark btn-sm" href="index.html">Home</a>
-                        </p>
-                        <p id="readSmokep"></p>
+                    <div id="hazelcoco" class="row">
+                        <div class="col-12 col-md-6 my-auto">
+                            <a href="https://www.hazelmountainchocolate.com/"><img
+                                    class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/hazelcoco.jpg"
+                                    alt="Hazel Mountain Chocolate" /></a>
+                        </div>
+
+                        <div class="middle col-md-6 col-12">
+                            <h4>Hazel Mountain Chocolate</h4>
+                            <p>
+                                <button id="readHazel" data-type="hazelbtn" class="buttonreadon">Read On</button>
+                                <button id="selectHazel" class="buttonsuit" value="Hazel Mountain Chocolate"
+                                    onclick="addItemHazel()">Suitcase</button>
+                                <a class="btn btn-dark btn-sm" href="index.html">Home</a>
+                                <p id="readHazelp"></p>
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-                <div id="hazelcoco" class="row">
-                    <div class="col-12 col-md-6 my-auto">
-                        <a href="https://www.hazelmountainchocolate.com/"><img
-                                class="mr-3 mt-3 img-thumbnail rounded-circle" src="assets/images/hazelcoco.jpg"
-                                alt="Hazel Mountain Chocolate" /></a>
-                    </div>
-
-                    <div class="middle col-md-6 col-12">
-                        <h4>Hazel Mountain Chocolate</h4>
-
-                        <p>
-                            <button id="readHazel" data-type="hazelbtn" class="buttonreadon">Read On</button>
-                            <button id="selectHazel" class="buttonsuit">Suitcase</button>
-                            <a class="btn btn-dark btn-sm" href="index.html">Home</a>
-                        </p>
-                        <p id="readHazelp"></p>
-
-                    </div>
-                </div>
 
             </section>
         </div>
     </div>
 
-    <!-- End of the must try-->
+    <!--/must try-->
 
-    <!-- LOGO -->
-    <div class=" my-2" style="text-align: center;"> <i class="fas fa-hotel fa-4x text-danger"></i> </div>
+    <!--LOGO-->
+    <div class=" my-2" style="text-align: center;"> <i class="fas fa-hotel fa-4x text-danger"></i></div>
 
-    <!-- Must Stay   -->
+    <!---------------------------------------------------------------------Must Stay-------------------------------------->
 
     <div class="container-wrapper container-wrapper-amber">
         <div class="container muststay-container content-container">
@@ -298,17 +298,17 @@
                     <div id="dromoland" class="col-12 col-md-6 my-auto">
                         <a href="https://www.dromoland.ie/"><img class="mr-3 mt-3 img-thumbnail rounded-circle"
                                 src="assets/images/dromland.jpg" alt="Dromoland Castle" /></a>
+                                
                     </div>
-
 
 
                     <div class="middle col-md-6 col-12">
                         <h4>Dromoland Castle</h4>
                         <p><button id="readDromo" data-type="dromolandbtn" class="buttonreadon">Read On</button>
-                            <button id="selectDromoland" class="buttonsuit">Suitcase</button>
-                            <a class="btn btn-dark btn-sm" href="index.html">Home</a>
-                        </p>
-                        <p id="readDromop"></p>
+                            <button id="selectDromoland" class="buttonsuit" value="Dromoland Castle"
+                                onclick="addItemDromoland()">Suitcase</button>
+                            <a class="btn btn-dark btn-sm" href="index.html">Home</a> </p>
+                            <p id="readDromop"></p>
                     </div>
                 </div>
 
@@ -323,12 +323,10 @@
                     <div class="middle col-md-6 col-12">
                         <h4>The Old Ground Hotel</h4>
                         <p><button id="readOldg" data-type="oldgroundbtn" class="buttonreadon">Read On</button>
-                            <button id="selectOldground" class="buttonsuit">Suitcase</button>
-                            <a class="btn btn-dark btn-sm" href="index.html">Home</a>
-
-                        </p>
-
-                        <p id="readOldgp"></p>
+                            <button id="selectOldground" class="buttonsuit" value="The Old Ground Hotel"
+                                onclick="addItemOldground()">Suitcase</button>
+                            <a class="btn btn-dark btn-sm" href="index.html">Home</a></p>
+                            <p id="readOldgp"></p>
                     </div>
                 </div>
 
@@ -343,47 +341,32 @@
                         <h4>Doolin Glamping</h4>
                         <p>
                             <button id="readGlamp" data-type="doolingbtn" class="buttonreadon">Read On</button>
-                            <button id="selectDooling" class="buttonsuit">Suitcase</button>
+                            <button id="selectDooling" class="buttonsuit" value="Doolin Glamping"
+                                onclick="addItemDooling()">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
+                            <p id="readGlampp"></p>
                         </p>
-                        <p id="readGlampp"></p>
-
                     </div>
                 </div>
 
             </section>
         </div>
     </div>
+    <!--/Must Stay-->
 
-    <!-- Google Maps API section -->
+    <!--Suitcase Section-->
+    <section>
+        <div class="row" id="suitcase">
+            <div class="col-12 my-3">
+                <h4><i class="fas fa-suitcase"></i> Your Suitcase</h4>
+                <p id="suitcasep">Here is what you added!</p>
 
-    <section id="api-map">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <h4 id="maptitle">Map Of The Must Sees!</h4>
-                </div>
-                <div id="map"></div>
-
-
+                <p id="emptycase"></p>
+                <p><small>**Just click on item to remove it from the list</small></p>
             </div>
         </div>
     </section>
-
-
-    <!-- Suitcase Section -->
-
-    <div class="row" id="suitcase">
-        <div class="col-12 my-3">
-            <h4><i class="fas fa-suitcase"></i> Your Suitcase</h4>
-            <p id="suitcasep">Here is what you added!</p>
-
-            <p id="emptycase"></p>
-            <p><small>**Just click on item to remove it from the list</small></p>
-        </div>
-    </div>
-
-
+    </article>
 
     <footer>
         <div class="container-fluid">
@@ -391,9 +374,9 @@
                 <div class="col-12 footersetting">
                     <h5>Contact Us</h5>
                     <p><i class="fas fa-mobile-alt"></i> Tele: +353 86 4455662</p>
-                    <p id="femail"><i class="far fa-envelope"></i> Email: info@2nights6sights.ie</p>
+                    <p><i class="far fa-envelope"></i> Email: info@2nights6sights.ie</p>
 
-                    <ul class="besocial">
+                    <ul class="be-social">
                         <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"> </i></a></li>
                         <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"> </i></a>
                         </li>
@@ -406,7 +389,6 @@
             </div>
         </div>
     </footer>
-
 
     <!-- MODEL BOOTSTRAP-->
     <div class="modal" tabindex="-1" role="dialog" id="signupM">
@@ -432,8 +414,8 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"
-                                required>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email" required>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
@@ -447,31 +429,20 @@
                         <button type="submit" id="modalsubmit" class="btn btn-danger">Submit</button>
                     </form>
                 </div>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
 
-
-    <!-- Bootstrap JS, jQuery, Popper bundle -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js"
-        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+                <!-- Bootstrap JS, jQuery, Popper bundle -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
-    </script>
-
-    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-    <script
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0vABw-7zdH3dpXNkfNRAYuiz0_pXlxXs&callback=initMap">
-    </script>
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
     <script src="assets/javascript/script.js"></script>
     <script src="assets/javascript/readon.js"></script>
-    <script src="assets/javascript/map.js"></script>
 
 </body>
 

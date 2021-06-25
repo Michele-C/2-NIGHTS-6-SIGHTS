@@ -134,7 +134,7 @@
                         <h2><i class="fa fa-binoculars" aria-hidden="true"></i> Must See!</h2>
                     </div>
                 </div>
-<button id="my-button"> CLICKITY CLICK</button>
+
                 <div id="cliffs" class="row">
                     <div class="col-12 col-md-6 my-auto">
                         <a href="https://www.cliffsofmoher.ie/"><img class="mr-3 mt-3 img-thumbnail rounded-circle"
@@ -144,7 +144,7 @@
                         <h4>Cliffs of Moher</h4>
                         <p>
                             <button id="readcliffs" data-type="cliffsbtn" class="buttonreadon">Read On</button>
-                            <button id="selectCliffs" class="buttonsuit">Suitcase</button>
+                            <button id="selectCliffs" class="buttonsuit"  value="Cliffs of Moher" onclick="addItemCliffs(this);" >Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
                         </p>
                         <p id="readcliffsp"></p>
@@ -161,7 +161,8 @@
                         <h4>The Burren National Park</h4>
                         <p>
                             <button id="readBurren" data-type="burrenbtn" class="buttonreadon">Read On</button>
-                            <button id="selectBurren" class="buttonsuit" value="The Burren National Park">Suitcase</button>
+                            <button id="selectBurren" class="buttonsuit" value="The Burren National Park"
+                                onclick="addItemBurren(this);">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
                         </p>
                         <p id="readBurrenp"></p>
@@ -178,7 +179,8 @@
                         <h4>Bunratty Castle and Folk Park</h4>
                         <p>
                             <button id="readBunratty" data-type="bunrattybtn" class="buttonreadon">Read On</button>
-                            <button id="selectBunratty" class="buttonsuit" value="Bunratty Castle and Folk Park">Suitcase</button>
+                            <button id="selectBunratty" class="buttonsuit" value="Bunratty Castle and Folk Park"
+                                onclick="addItem();">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
                         </p>
                         <p id="readBunrattyp"></p>
@@ -222,7 +224,8 @@
                         <h4>The Burren Perfumery</h4>
                         <p>
                             <button id="readPerfumery" data-type="perfumerybtn" class="buttonreadon">Read On</button>
-                            <button id="selectPerfumery" class="buttonsuit">Suitcase</button>
+                            <button id="selectPerfumery" class="buttonsuit" value="The Burren Perfumery"
+                                onclick="addItemPerfumery()">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
                         </p>
                         <p id="readPerfumeryp"></p>
@@ -243,7 +246,8 @@
                         <h4>The Burren Smoke House</h4>
                         <p>
                             <button id="readSmoke" data-type="smokebtn" class="buttonreadon">Read On</button>
-                            <button id="selectSmoke" class="buttonsuit">Suitcase</button>
+                            <button id="selectSmoke" class="buttonsuit" value="The Burren Smoke House"
+                                onclick="addItemSmoke()">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
                         </p>
                         <p id="readSmokep"></p>
@@ -262,7 +266,8 @@
 
                         <p>
                             <button id="readHazel" data-type="hazelbtn" class="buttonreadon">Read On</button>
-                            <button id="selectHazel" class="buttonsuit">Suitcase</button>
+                            <button id="selectHazel" class="buttonsuit" value="Hazel Mountain Chocolate"
+                                onclick="addItemHazel();">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
                         </p>
                         <p id="readHazelp"></p>
@@ -305,7 +310,8 @@
                     <div class="middle col-md-6 col-12">
                         <h4>Dromoland Castle</h4>
                         <p><button id="readDromo" data-type="dromolandbtn" class="buttonreadon">Read On</button>
-                            <button id="selectDromoland" class="buttonsuit">Suitcase</button>
+                            <button id="selectDromoland" class="buttonsuit" value="Dromoland Castle"
+                                onclick="addItem();">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
                         </p>
                         <p id="readDromop"></p>
@@ -323,7 +329,8 @@
                     <div class="middle col-md-6 col-12">
                         <h4>The Old Ground Hotel</h4>
                         <p><button id="readOldg" data-type="oldgroundbtn" class="buttonreadon">Read On</button>
-                            <button id="selectOldground" class="buttonsuit">Suitcase</button>
+                            <button id="selectOldground" class="buttonsuit" value="The Old Ground Hotel"
+                                onclick="addItem();">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
 
                         </p>
@@ -343,7 +350,8 @@
                         <h4>Doolin Glamping</h4>
                         <p>
                             <button id="readGlamp" data-type="doolingbtn" class="buttonreadon">Read On</button>
-                            <button id="selectDooling" class="buttonsuit">Suitcase</button>
+                            <button id="selectDooling" class="buttonsuit" value="Doolin Glamping"
+                                onclick="addItem();">Suitcase</button>
                             <a class="btn btn-dark btn-sm" href="index.html">Home</a>
                         </p>
                         <p id="readGlampp"></p>
@@ -378,7 +386,7 @@
             <h4><i class="fas fa-suitcase"></i> Your Suitcase</h4>
             <p id="suitcasep">Here is what you added!</p>
 
-            <p id="emptycase"></p>
+            <div id="emptycase"></div>
             <p><small>**Just click on item to remove it from the list</small></p>
         </div>
     </div>
@@ -469,9 +477,10 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0vABw-7zdH3dpXNkfNRAYuiz0_pXlxXs&callback=initMap">
     </script>
-    <script src="assets/javascript/script.js"></script>
+    
     <script src="assets/javascript/readon.js"></script>
     <script src="assets/javascript/map.js"></script>
+    <script src="assets/javascript/script.js"></script>
 
 </body>
 

@@ -1,133 +1,80 @@
+document.addEventListener("DOMContentLoaded", function(){
 
-    
-    function addItemCliffs(){
-        var x = document.createElement("li");
+    var cliffs= document.getElementById("selectCliffs");
+    var Burren = document.getElementById("selectBurren");
+    var Bunratty = document.getElementById("selectBunratty");
+    var Perfumery = document.getElementById("selectPerfumery");
+    var Smoke = document.getElementById("selectSmoke");
+    var Hazel =document.getElementById("selectHazel");
+    var Dromoland = document.getElementById("selectDromoland");
+    var Oldground = document.getElementById("selectOldground");
+    var Dooling = document.getElementById("selectDooling");
 
-        var button = document.getElementById("selectCliffs");
-         
-    x.innerHTML = button.value;
-
-     x.onclick = removeItem;
-    
-
-    document.getElementById("emptycase").appendChild(x);
-    
-}
-
-
-function addItemBurren(){
-
+cliffs.addEventListener('click', function(){
     var x = document.createElement("li");
-
-    var button = document.getElementById("selectBurren");
-     
-    x.innerHTML = button.value;
-
-     x.onclick = removeItem;
-
-    document.getElementById("emptycase").appendChild(x);
-}
-
-function addItemBunratty(){
-
-    var x = document.createElement("li");
-
-    var button = document.getElementById("selectBunratty");
-     
-    x.innerHTML = button.value;
-
-     x.onclick = removeItem;
-
-    document.getElementById("emptycase").appendChild(x);
-}
-
-function addItemPerfumery(){
-
-    var x = document.createElement("li");
-
-    var button = document.getElementById("selectPerfumery");
-     
-    x.innerHTML = button.value;
-
-     x.onclick = removeItem;
-
-  
-
-    document.getElementById("emptycase").appendChild(x);
-}
-
-
-function addItemSmoke(){
-
-    var x = document.createElement("li");
-
-    var button = document.getElementById("selectSmoke");
-     
-    x.innerHTML = button.value;
-     x.onclick = removeItem;
-    document.getElementById("emptycase").appendChild(x);
-}
-
-
-function addItemHazel(){
-
-    var x = document.createElement("li");
-
-    var button = document.getElementById("selectHazel");
-     
-    x.innerHTML = button.value;
-
-     x.onclick = removeItem;
-
-    document.getElementById("emptycase").appendChild(x);
-      
-}
-
-function addItemDromoland(){
-
-    var x = document.createElement("li");
-
-    var button = document.getElementById("selectDromoland");
-     
-    x.innerHTML = button.value;
-
-     x.onclick = removeItem;
-
-    //button.value = "";
-
-    document.getElementById("emptycase").appendChild(x);
-}
-
-function addItemOldground(){
-
-    var x = document.createElement("li");
-
-    var button = document.getElementById("selectOldground");
-     
-    x.innerHTML = button.value;
-
-     x.onclick = removeItem;
-
-    document.getElementById("emptycase").appendChild(x);
-}
-
-
-function addItemDooling(){
-
-    var x = document.createElement("li");
-
-    var button = document.getElementById("selectDooling");
-     
-    x.innerHTML = button.value;
-
+    x.textContent="The Cliffs of Moher";
     x.onclick = removeItem;
-
     document.getElementById("emptycase").appendChild(x);
-}
+});
 
-//removing item from suitcase.
+Burren.addEventListener('click', function(){
+    var x = document.createElement("li");
+    x.textContent="The Burren National Park and Ailwee Caves.";
+    x.onclick = removeItem;
+    document.getElementById("emptycase").appendChild(x);
+});
+Bunratty.addEventListener('click', function(){
+    var x = document.createElement("li");
+    x.textContent="Bunratty Castle and Folk Park.";
+    x.onclick = removeItem;
+    document.getElementById("emptycase").appendChild(x);
+});
+
+Perfumery.addEventListener('click', function(){
+    var x = document.createElement("li");
+    x.textContent="The Burren Perfumery.";
+    x.onclick = removeItem;
+    document.getElementById("emptycase").appendChild(x);
+});
+
+Smoke.addEventListener('click', function(){
+    var x = document.createElement("li");
+    x.textContent="The Burren Smokehouse.";
+    x.onclick = removeItem;
+    document.getElementById("emptycase").appendChild(x);
+});
+
+Hazel.addEventListener('click', function(){
+    var x = document.createElement("li");
+    x.textContent="Hazel Mountain Chocolate Factory.";
+    x.onclick = removeItem;
+    document.getElementById("emptycase").appendChild(x);
+});
+
+Dromoland.addEventListener('click', function(){
+    var x = document.createElement("li");
+    x.textContent="Dromoland Castle and Golf Club.";
+    x.onclick = removeItem;
+    document.getElementById("emptycase").appendChild(x);
+});
+
+Oldground.addEventListener('click', function(){
+    var x = document.createElement("li");
+    x.textContent="The Old Ground Hotel.";
+    x.onclick = removeItem;
+    document.getElementById("emptycase").appendChild(x);
+});
+
+Dooling.addEventListener('click', function(){
+    var x = document.createElement("li");
+    x.textContent="Doolin Glamping.";
+    x.onclick = removeItem;
+    document.getElementById("emptycase").appendChild(x);
+});
 
 function removeItem() {
     document.getElementById("emptycase").removeChild(this);
-    }
+}
+
+});
 
